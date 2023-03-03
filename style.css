@@ -312,6 +312,7 @@ cursor: pointer;
     font-family: 'Gotham-Pro-Bold',sans-serif;
     line-height: 1.04;
     color:var(--shadow-poster);
+    background-color: inherit;
 }
 
 .form__label{

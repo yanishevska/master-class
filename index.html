@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Тестовое практическое задание Верстальщик_Янішевська Тетяна Романівна</title>
 </head>
 <body>
+    <div class="master-class">
+    <button class="master-class__btn" data-modal-open>
+        <span>Pop-up</span>
+    </button>
     
+    <div class="pop-up__backdrop backdrop is-close" data-modal >
+          <button class="pop-up__btn-close" type="button" data-modal-close>
+              <svg width="11" height="11">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+    <section class="pop-up">
+        <div class="poster-side">
+            <p class="poster-side__text">ПОШ<br/>АГО-ВЫЙ ПЛАН</p>
+            <img class="poster-side__poster" src="./images/book-poster.png" alt="poster book" width="394px">
+        </div>
+
+        <div class="description-side">
+            <h2 class="description-side__title">мастер-класс?</h2>
+            <p>Скачайте пошаговый план</p>
+            <h3 class="description-side__book-title">&laquoКак собственнику<br/> выйти из операционки&raquo</h3>
+                <p class="description-side__text">и познакомьтесь с этим инструментом <br/> <span> прямо сейчас</span></p>
+                <p class="description-side__text__bottom">10 шагов помогут создать системный бизнес</p>
+
+        <form name="form" autocomplete="on" novalidate>
+            <label class="form__label">
+                Для получения бонуса введите email
+              <input class="form__input" type="email" name="email" placeholder="Ваш e-mail" />
+            </label>   
+            <button class="form__button" type="submit">Скачать пошаговой план</button>
+          </form> 
+        </div>
+    </section>
+</div>
+</div>
+    <script src="./index.js"></script>
 </body>
 </html>
